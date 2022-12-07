@@ -1,3 +1,8 @@
+p,
+h1,
+h2 {
+  margin: 0;
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -6,20 +11,32 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
   /* выше установили ограничения для секции */
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: #f2f2f2;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+  position: absolute;
+  right: 0;
+  top: 64px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -28,4 +45,142 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+.logo {
+  height: 32px;
+  width: 228px;
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-image: url(../images/logo_place_header.svg);
+}
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  position: relative;
+  z-index: 1;
+  left: 64px;
+}
+.header__sublitle {
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+.header__main-illustration {
+  height: 608px;
+  width: 765px;
+
+  background-size: cover;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+
+  background-image: url(../images/header-image.png);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+/* .description {
+} */
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+  width: 80%;
+
+  margin: 100px auto;
+}
+.two-columns__brief {
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+
+  width: 175px;
+}
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+  /* min-height: 90%; не используем т.к. плавает при масштабировании*/
+}
+.two-columns__paragraph {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+}
+.two-columns__paragraph:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.two-columns__span-accent {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+.digits {
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+}
+.section-title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+  text-align: center;
+  width: 60%;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+  margin: 0 auto 20px;
+}
+.section-subtitle {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: center;
+  width: 60%;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+  margin: 0 auto;
+}
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1100px;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+  margin: 0 auto;
+}
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+}
+.table__heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+}
+.table__text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-top: 20px;
+  border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
