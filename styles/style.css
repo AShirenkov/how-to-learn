@@ -1,12 +1,3 @@
-p,
-a,
-h1,
-h2,
-h3,
-img {
-  margin: 0;
-  padding: 0;
-}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -64,6 +55,9 @@ img {
   left: 64px;
 }
 .header__title {
+  margin: 0;
+  padding: 0;
+
   width: 730px;
   font-size: 102px;
   font-weight: 600;
@@ -73,6 +67,9 @@ img {
   left: 64px;
 }
 .header__sublitle {
+  margin: 0;
+  padding: 0;
+
   width: 388px;
   position: absolute;
   left: 64px;
@@ -83,6 +80,8 @@ img {
 }
 
 .header__link {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   color: #2f80ed;
 }
@@ -91,7 +90,6 @@ img {
   width: 765px;
 
   background-size: cover;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 
   background-image: url(../images/header-image.png);
   position: absolute;
@@ -102,12 +100,14 @@ img {
 .two-columns {
   display: flex;
   justify-content: space-between;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+
   width: 80%;
 
   margin: 100px auto;
 }
 .two-columns__brief {
+  margin: 0;
+  padding: 0;
   color: #2f80ed;
   font-size: 18px;
   font-weight: normal;
@@ -121,67 +121,72 @@ img {
   justify-content: space-between;
   width: 80%;
   min-width: 784px;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+
   /* min-height: 90%; не используем т.к. плавает при масштабировании*/
 }
 .two-columns__paragraph {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+}
+.two-columns__span-accent {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
 }
 .two-columns__paragraph:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.two-columns__span-accent {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 34px;
-}
 .section-title {
+  margin: 0 auto 20px;
+  padding: 0;
+
   font-size: 60px;
   font-weight: 600;
   line-height: 1.15;
   text-align: center;
   width: 60%;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
-  margin: 0 auto 20px;
 }
 .section-subtitle {
+  margin: 0 auto;
+  padding: 0;
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
   text-align: center;
   width: 60%;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
-  margin: 0 auto;
 }
 .table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
+
   margin: 0 auto;
 }
 .table__cell {
   width: 250px;
   margin-top: 60px;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 .table__heading {
+  margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.15;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 .table__text {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
-  margin-top: 20px;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 .feynman {
   margin-top: 100px;
@@ -191,39 +196,38 @@ img {
   background-repeat: no-repeat;
   background-size: 867px 637px;
   background-position: bottom left;
-  /* /*border: 1px solid red; убрать в конце временные границы для наглядности */
+
   position: relative;
   background-color: #f2f2f2;
 }
 .feynman__title {
+  margin: 0 auto;
+  padding: 0;
   width: 648px;
-  /* margin: 100px auto 0; */
 
-  margin-left: auto;
-  margin-right: auto;
   font-size: 120px;
   font-weight: 600;
   line-height: 1.15;
   text-align: center;
-  /* /*border: 1px solid red; убрать в конце временные границы для наглядности */
 }
 .feynman__subtitle {
+  margin: 70px auto 0;
+  padding: 0;
   width: fit-content;
 
-  margin: 70px auto 0;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
   text-align: center;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 .feynman__link {
+  margin: 0;
+  padding: 0;
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
   text-decoration: none;
   color: #2f80ed;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
   position: absolute;
   right: 48px;
   top: 50%;
@@ -243,7 +247,6 @@ img {
   font-size: 60px;
   font-weight: 600;
   line-height: 1.15;
-  /* margin-top: 90px; */
 }
 .section-subtitle_theme-dark {
   color: white;
@@ -257,27 +260,24 @@ img {
 .table__cell_theme-dark {
   width: 200px;
   margin-top: 80px;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 .table__heading_theme-dark {
   color: white;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.15;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 .table__text_theme-dark {
   color: white;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 .kaufman__triangle {
   margin: 0;
   height: 877px;
   width: 877px;
-  /* background-image: url(../images/kaufman-triangle.svg); */
+
   position: absolute;
   right: -210px;
   top: 0;
@@ -288,7 +288,6 @@ img {
   min-height: 350px;
   margin: 0 auto;
   overflow: hidden;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
 }
 
 .logo_place_footer {
@@ -300,8 +299,6 @@ img {
   width: 90%;
   min-height: 250px;
   margin: 60px auto 40px;
-  /*border: 1px solid red; /*убрать в конце временные границы для наглядности*/
-  /* padding: 60px 0 40px; */
 }
 /* .footer__column {
   border: 1px solid red;
@@ -314,12 +311,16 @@ img {
 }
 .footer__author {
   margin: 18px 0;
+  padding: 0;
+
   color: white;
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
 }
 .footer__column-heading {
+  margin: 0;
+  padding: 0;
   color: white;
   font-size: 18px;
   font-weight: 600;
@@ -331,6 +332,8 @@ img {
   margin: 20px 0 16px;
 }
 .footer__column-link {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 30px;
