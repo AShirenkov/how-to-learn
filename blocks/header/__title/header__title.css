@@ -8,5 +8,6 @@
   line-height: 96px;
   position: relative;
   z-index: 1;
-  left: 64px;
+  /* left: 64px; */
+  margin-left: 64px;
 }

@@ -1,9 +1,10 @@
 .khan__book-pic {
   /* display: block; */
-  width: 520px;
-  height: 508px;
+  width: 620px;
+  height: 608px;
+  object-position: left top;
+  object-fit: cover;
+  /* background-image: url(../../../images/khan-book.jpg); */
 
-  background-image: url(../../../images/khan-book.jpg);
-
-  background-size: cover;
+  /* background-size: cover; */
 }
